@@ -3,7 +3,7 @@ import './App.css';
 import store from './store'
 
 
-import getPostById from './actions';
+import getUserById from './actions';
 
 export default function App() {
 
@@ -17,17 +17,17 @@ export default function App() {
     else if(newData.error)
       setData("Error: ", newData.error);
     else if(newData.data)
-      setData(newData.data.body)
+      setData(newData.data)
   })
 
 
   return (
     <div className="App">
       <button onClick={() => {
-        getPostById(1);
+        getUserById(1);
       }} className="fetch1">Fetch 1</button>
       <button onClick={() => {
-        getPostById(2);
+        getUserById(2);
       }} className="fetch2">Fetch 2</button>
       <p className="data">{data}</p>
     </div>

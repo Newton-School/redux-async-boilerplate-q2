@@ -1,2 +1,2 @@
-export const getPostsById = id => fetch(`https://jsonplaceholder.typicode.com/Posts/${id}`);
+export const getUsers = () => fetch(`https://content.newtonschool.co/v1/pr/main/users`);
 

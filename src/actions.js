@@ -1,21 +1,22 @@
 import {
-    GET_POSTS_BY_ID_REQUEST,
-    GET_POSTS_BY_ID_SUCCESS,
-    GET_POSTS_BY_ID_FAIL,
+    GET_USERS_BY_ID_REQUEST,
+    GET_USERS_BY_ID_SUCCESS,
+    GET_USERS_BY_ID_FAIL,
 } from "./constants";
 
 import {
-    getPostsById,
+    getUsers,
 } from "./api";
 
 import store from './store'
 
 
-const getPostById = async (id) => {
+
+const getUserById = async () => {
    //Complete this function
 };
 
-export default getPostById
+export default getUserById
 
 
 
